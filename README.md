@@ -36,5 +36,5 @@ dbconfig knex simple --dbname=someDBName
 ```
 - To create a new project with all necessary files to get started:
 ```
-dbconfig knex scaffold --dbname=someDBName --
+dbconfig knex scaffold --dbname=someDBName --create-dir=whateverProjectNameYouWant
 ```
