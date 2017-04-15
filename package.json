@@ -1,0 +1,22 @@
+{
+  "name": "dbconfig",
+  "version": "0.1.0",
+  "author": "John Armbruster",
+  "description": "An easy-to-use way to populate init files for databases.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnazre/dbconfig"
+  },
+  "main": "dbconfig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "dbconfig"
+  },
+  "bin": {
+    "dbconfig": "dbconfig.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+  },
+  "preferGlobal": "true"
+}
