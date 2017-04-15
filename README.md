@@ -22,11 +22,11 @@ dbconfig knex [ type ] [ options ]
  Example usage: `dbconfig knex simple --dbname=someDBName`<br><br>
 
 #### Options:
- --dbname            Replace "dbname" with the database you will be using, otherwise it will default to the database name "postgres"
- ex: dbconfig knex scaffold --dbname=someDBName
+ --dbname            Replace "dbname" with the database you will be using, otherwise it will default to the database name "postgres"<br><br>
+ Example usage: `dbconfig knex scaffold --dbname=someDBName`<br><br>
 
- --create-dir        Will create directory and put all of the files inside of that directory. Defaults to "new-app".
- ex: dbconfig knex simple --create-dir=someDirName
+ --create-dir        Will create directory and put all of the files inside of that directory. Defaults to "new-app".<br><br>
+ Example usage: `dbconfig knex scaffold --create-dir=someProjectName`<br><br>
 
 ### Getting Started
 
@@ -36,5 +36,5 @@ dbconfig knex simple --dbname=someDBName
 ```
 - To create a new project with all necessary files to get started:
 ```
-dbconfig knex scaffold --dbname=someDBName --create-dir=whateverProjectNameYouWant
+dbconfig knex scaffold --dbname=someDBName --create-dir=someProjectName
 ```
