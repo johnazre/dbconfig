@@ -20,6 +20,12 @@ if(!process.argv[2] || process.argv.includes('--help')) {
     if(process.argv[3].toLowerCase() === 'scaffold') {
       fs.mkdirSync(`./${directoryName}`)
       console.log("\x1b[36m", `Created ./${directoryName}`)
+
+      fs.mkdirSync(`./${directoryName}/db`)
+      console.log("\x1b[36m", `Created ./${directoryName}/db`)
+      fs.writeFileSync(`./${directoryName}/db/knex.js`, knex_files.knexInit);
+      console.log("\x1b[36m", `Created ./${directoryName}/db/knex.js`)
+
       fs.mkdirSync(`./${directoryName}/views`);
       console.log("\x1b[36m", `Created ./${directoryName}/views`)
       fs.writeFileSync(`./${directoryName}/views/index.ejs`, shared_files.indexView);
