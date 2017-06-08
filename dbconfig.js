@@ -43,6 +43,10 @@ if(!process.argv[2] || process.argv.includes('--help')) {
     } else if(process.argv[3].toLowerCase() === `simple`) {
       fs.writeFileSync(`./knexfile.js`, knex_files.knexfile);
       console.log("\x1b[36m", "\x1b[36m", 'Created ./knexfile.js')
+      fs.mkdirSync(`./db`)
+      console.log("\x1b[36m", `Created ./db`)
+      fs.writeFileSync(`./db/knex.js`, knex_files.knexInit);
+      console.log("\x1b[36m", `Created ./db/knex.js`)
     }
   }
   if(process.argv[2].toLowerCase() === 'objectionjs') {

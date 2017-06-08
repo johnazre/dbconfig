@@ -1,6 +1,6 @@
 {
   "name": "dbconfig",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "author": "John Armbruster",
   "description": "An easy-to-use way to populate init files for databases.",
   "repository": {
