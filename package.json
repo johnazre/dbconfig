@@ -9,14 +9,17 @@
   },
   "main": "dbconfig.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./test/*.test.js",
     "postinstall": "dbconfig"
   },
   "bin": {
     "dbconfig": "dbconfig.js"
   },
   "license": "ISC",
-  "dependencies": {
-  },
-  "preferGlobal": "true"
+  "dependencies": {},
+  "preferGlobal": true,
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
 }
