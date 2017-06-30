@@ -28,6 +28,9 @@ dbconfig knex [ type ] [ options ]
  --create-dir        Will create directory and put all of the files inside of that directory. Defaults to "new-app".<br><br>
  Example usage: `dbconfig knex scaffold --create-dir=someProjectName`<br><br>
 
+ --router            Will move the routes from the server.js file into a "routes" directory.<br><br>
+ Example usage: `dbconfig knex simple --create-dir=someDirName --router`<br><br>
+
 ## Getting Started
 
 - To put the necessary files into an existing project:
