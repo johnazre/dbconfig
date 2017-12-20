@@ -1,5 +1,5 @@
-# DBConfig v2!
-A command line tool to help you get your node database tools up and running! In version 2, you no longer have to use flags! You can just start the command line tool by running `dbconfig` and it will ask you all the questions you need!
+# DBConfig v1.0.0!
+A command line tool to help you get your node database tools up and running! In version 1.0, you no longer have to use flags! You can just start the command line tool by running `dbconfig` and it will ask you all the questions you need!
 
 ## Currently works with:
 
