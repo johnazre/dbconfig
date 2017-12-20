@@ -22,19 +22,6 @@ if(process.argv.includes('--help')) {
   });
 }
 
-
-//   if(process.argv[2].toLowerCase() === 'knex') {
-//     if(process.argv[3].toLowerCase() === 'scaffold') {
-//       util_files.generateScaffold(router);
-//     } else if(process.argv[3].toLowerCase() === `simple`) {
-//       fs.writeFileSync(`./knexfile.js`, knex_files.knexfile);
-//       console.log("\x1b[36m", "\x1b[36m", 'Created ./knexfile.js');
-//       fs.mkdirSync(`./db`);
-//       console.log("\x1b[36m", `Created ./db`);
-//       fs.writeFileSync(`./db/knex.js`, knex_files.knexInit);
-//       console.log("\x1b[36m", `Created ./db/knex.js`);
-//     }
-//   }
 //   if(process.argv[2].toLowerCase() === 'objectionjs') {
 //     if(process.argv[3].toLowerCase() === 'scaffold') {
 //       fs.mkdirSync(`./${directoryName}`);
