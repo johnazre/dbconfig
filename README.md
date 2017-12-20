@@ -1,46 +1,32 @@
-# DBConfig
-A command line tool to help you get your node database tools up and running!
+# DBConfig v2!
+A command line tool to help you get your node database tools up and running! In version 2, you no longer have to use flags! You can just start the command line tool by running `dbconfig` and it will ask you all the questions you need!
 
 ## Currently works with:
+
  - KnexJS
 
 ## Installation:
+
+If you're on a Mac/Linux:
+```
+sudo npm install -g dbconfig
+```
+If you're on Windows:
 ```
 npm install -g dbconfig
 ```
 
 ## Usage
-```
-dbconfig knex [ type ] [ options ]
-```
-### Type:
- - scaffold: Will create knexfile.js, server.js, .gitignore, and package.json<br><br>
- Example usage: `dbconfig knex scaffold --dbname=someDBName --create-dir=newapp`<br><br>
- - simple: Will only create knexfile.js
- ex: dbconfig knex simple
- <br><br>
- Example usage: `dbconfig knex simple --dbname=someDBName`<br><br>
 
-### Options:
- --dbname            Replace "dbname" with the database you will be using, otherwise it will default to the database name "postgres"<br><br>
- Example usage: `dbconfig knex scaffold --dbname=someDBName`<br><br>
-
- --create-dir        Will create directory and put all of the files inside of that directory. Defaults to "new-app".<br><br>
- Example usage: `dbconfig knex scaffold --create-dir=someProjectName`<br><br>
-
- --router            Will move the routes from the server.js file into a "routes" directory.<br><br>
- Example usage: `dbconfig knex simple --create-dir=someDirName --router`<br><br>
-
-## Getting Started
-
-- To put the necessary files into an existing project:
 ```
-dbconfig knex simple --dbname=someDBName
+dbconfig
 ```
-- To create a new project with all necessary files to get started:
-```
-dbconfig knex scaffold --dbname=someDBName --create-dir=someProjectName
-```
+ **Yes, that's it!**
+
+### Questions you will be asked:
+- Project Name: (String)
+- Database Type: (Choice) *Postgresql is the only option right now*
+- Which ORM would you like to use? *Knex is the only option right now*
 
 ## Contributions
 This project is open source and pull requests are welcome!

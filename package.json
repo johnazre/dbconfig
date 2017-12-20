@@ -16,7 +16,9 @@
     "dbconfig": "dbconfig.js"
   },
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^4.0.1"
+  },
   "preferGlobal": true,
   "devDependencies": {
     "chai": "^4.0.2",
