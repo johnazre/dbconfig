@@ -9,19 +9,20 @@ const questions = require('./lib/questions')
 // const obj_files = require('./lib/scaffolds/objectionjs.scaffold');
 //
 // const shared_files = require('./lib/scaffolds/shared.scaffold');
-// const help_data = require('./lib/help_blurb');
+const help_data = require('./lib/help_blurb');
 // const util_files = require('./lib/util_files');
 const builders = require('./lib/builders')
+
 
 if(process.argv.includes('--help')) {
   console.log("\x1b[36m", help_data.help);
 } else {
   inquirer.prompt(questions).then(answers => {
-    exports.answers = answers
-    builders()
-    console.log(JSON.stringify(answers, null, '  '));
+    builders(answers)
   });
 }
+
+
 //   if(process.argv[2].toLowerCase() === 'knex') {
 //     if(process.argv[3].toLowerCase() === 'scaffold') {
 //       util_files.generateScaffold(router);
