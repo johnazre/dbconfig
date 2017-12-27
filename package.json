@@ -1,6 +1,6 @@
 {
   "name": "dbconfig",
-  "version": "0.1.16",
+  "version": "1.0.1",
   "author": "John Armbruster",
   "description": "An easy-to-use way to populate init files for databases.",
   "repository": {
@@ -9,8 +9,7 @@
   },
   "main": "dbconfig.js",
   "scripts": {
-    "test": "mocha ./test/*.test.js",
-    "postinstall": "dbconfig"
+    "test": "mocha ./test/*.test.js"
   },
   "bin": {
     "dbconfig": "dbconfig.js"
