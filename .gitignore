@@ -3,3 +3,4 @@ npm-debug.log
 jsconfig.json
 .DS_Store
 new-app/
+.prettierrc
