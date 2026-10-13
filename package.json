@@ -21,6 +21,6 @@
   "preferGlobal": true,
   "devDependencies": {
     "chai": "^4.0.2",
-    "mocha": "^10.2.0"
+    "mocha": "^12.0.3"
   }
 }
